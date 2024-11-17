@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather-App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="container">
+        <div class="search">
+            
+                <input type="text" id="searchField" placeholder="Search for cities">
+                <button id="search-btn" type="button">Search</button>
+
+            
+        </div>
+        <div class="left">
+            <div class="left-side-bar">
+                <span id="logo">Logo</span>
+                <div class="left-link">
+                    <ul>
+                        <li><a href="#">Weather</a></li>
+                        <li><a href="#">Charts</a></li>
+                        <li><a href="#">Map</a></li>
+                        <li> <a href="#">Settings</a></li>
+                    </ul>
+                </div>
+            </div>
+           
+        </div>
+        <div class="row1">
+            <div class="row1-weather">
+                <div class="row1-weather-text">
+                    <div class="city-dec">
+                        <p class="city-name">Madrid</p>
+                        <p class="dec weather-name">Chance of rain 0%</p>
+                    </div>
+                    <div class="temp">
+                       <h2 id="temp-row1">31°</h2>
+                    </div>
+                 </div>
+                 <div class="row1-weather-icon">
+                    <img src="images/clear.png" class="weather-img">
+                 </div>
+            </div>
+           
+        </div>
+        <div class="row2">
+            <div class="row2-weather">
+                <p class="title">Today's Forecast</p>
+                <div class="todays-forecast">
+                    <div class="forecast-card">
+                      <p id="time">6:00 AM</p>
+                      <img src="images/clouds.png">
+                      <p id="temp">25°</p>
+                    </div>
+                    <div class="forecast-card">
+                     <p id="time">6:00 AM</p>
+                     <img src="images/clouds.png">
+                     <p id="temp">25°</p>
+                   </div>
+                   <div class="forecast-card">
+                     <p id="time">6:00 AM</p>
+                     <img src="images/clouds.png">
+                     <p id="temp">25°</p>
+                   </div>
+                   <div class="forecast-card">
+                     <p id="time">6:00 AM</p>
+                     <img src="images/clouds.png">
+                     <p id="temp">25°</p>
+                   </div>
+                   <div class="forecast-card">
+                     <p id="time">6:00 AM</p>
+                     <img src="images/clouds.png">
+                     <p id="temp">25°</p>
+                   </div>
+                   <div class="forecast-card" style="border-right: none;">
+                     <p id="time">6:00 AM</p>
+                     <img src="images/clouds.png">
+                     <p id="temp">25°</p>
+                   </div>
+                 </div>
+            </div> 
+        </div>
+        <div class="row3">
+            <div class="row3-weather">
+                <div class="btn-title">
+                    <p class="title">Air Conditions</p>
+                    <a href="#">See More</a>
+                </div>
+               
+                 <div class="air-condition">
+                    <div class="air-con-left">
+                       <div class="real-feel air-pad">
+                        <div class="text-icon">
+                            <i class="fa-solid fa-temperature-three-quarters"></i>
+                            <span>Real Feel</span>
+                        </div>
+                        <h2 class="air-con-h2 fr-temp">30°</h2>
+                       </div>
+                       <div class="rain-chance  air-pad">
+                        <div class="text-icon">
+                            <i class="fa-solid fa-droplet"></i>
+                            <span>Description</span>
+                        </div>
+                        <h2 class="air-con-h2 fr-cld">0%</h2>
+                       </div>
+                    </div>
+                    <div class="air-con-right">
+                        <div class="wind air-pad">
+                            <div class="text-icon">
+                                <i class="fa-solid fa-wind"></i>
+                                <span>Wind</span>
+                            </div>
+                            <h2 class="air-con-h2 fr-wind">0.2 km/h</h2>
+                        </div>
+                       <div class="uv-index  air-pad">
+                        <div class="text-icon">
+                            <i class="fa-regular fa-sun"></i>
+                            <span>UV Index</span>
+                        </div>
+                        <h2 class="air-con-h2 fr-uv">3</h2>
+                       </div>
+                    </div>
+                 </div>
+            </div>
+        </div>
+        <div class="right">
+            <div class="right-weather">
+                <p class="title">7-Day Forecast</p>
+                <div class="forecast-list">
+                    <div class="list-item">
+                       <p class="day">Tuesday</p>
+                       <div class="icon-weather-name">
+                        <img src="images/clear.png"  class="weahter-icon">
+                        <p class="weather-name">Sunny</p>
+                       </div>
+                       <p class="min-max">36<span id="min-temp">/22</span></p>
+                    </div>
+                    <div class="list-item">
+                        <p class="day">Tuesday</p>
+                        <div class="icon-weather-name">
+                         <img src="images/clear.png"  class="weahter-icon">
+                         <p class="weather-name">Sunny</p>
+                        </div>
+                        <p class="min-max">36<span id="min-temp">/22</span></p>
+                     </div>
+                     <div class="list-item">
+                        <p class="day">Tuesday</p>
+                        <div class="icon-weather-name">
+                         <img src="images/clear.png"  class="weahter-icon">
+                         <p class="weather-name">Sunny</p>
+                        </div>
+                        <p class="min-max">36<span id="min-temp">/22</span></p>
+                     </div>
+                     <div class="list-item">
+                        <p class="day">Tuesday</p>
+                        <div class="icon-weather-name">
+                         <img src="images/clear.png"  class="weahter-icon">
+                         <p class="weather-name">Sunny</p>
+                        </div>
+                        <p class="min-max">36<span id="min-temp">/22</span></p>
+                     </div>
+                     <div class="list-item">
+                        <p class="day">Tuesday</p>
+                        <div class="icon-weather-name">
+                         <img src="images/clear.png"  class="weahter-icon">
+                         <p class="weather-name">Sunny</p>
+                        </div>
+                        <p class="min-max">36<span id="min-temp">/22</span></p>
+                     </div>
+                     <div class="list-item">
+                        <p class="day">Tuesday</p>
+                        <div class="icon-weather-name">
+                         <img src="images/clear.png"  class="weahter-icon">
+                         <p class="weather-name">Sunny</p>
+                        </div>
+                        <p class="min-max">36<span id="min-temp">/22</span></p>
+                     </div>
+                     <div class="list-item" style="border-bottom: none;">
+                        <p class="day">Tuesday</p>
+                        <div class="icon-weather-name " >
+                         <img src="images/clear.png"  class="weahter-icon">
+                         <p class="weather-name">Sunny</p>
+                        </div>
+                        <p class="min-max">36<span id="min-temp">/22</span></p>
+                     </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
